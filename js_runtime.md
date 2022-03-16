@@ -28,7 +28,7 @@
 - ans: the essential piece make async behavior possible in JS
 - concurrency model : how the langues handle multiple thing happening at the same time
 
-![anatomy of js](anatomy-of-js.png)
+![anatomy of js](pic/anatomy-of-js.png)
 
 ## How async code be executed in a non blocking way?
 
@@ -44,5 +44,5 @@
 => it basically has priority over the callback queue.
 => at the end of evenloop tick (_means after event loop take cb to runtime_), event loop will check if any callbacks in the microtask queue, if there are, it will run all of them (_promise_) before it will run any more callbacks from the regular callback queue
 
-![microtask](microtask.png)
-![priority-of-microtask](priority-of-microtask.png)
+![microtask](pic/microtask.png)
+![priority-of-microtask](pic/priority-of-microtask.png)
